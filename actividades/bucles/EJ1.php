@@ -7,12 +7,24 @@
 </head>
 <body>
     <?php
-    echo"Bucle de multiplos de 5 hasta el 100";
-    for ($i = 0; $i < 0; $i++) {
-        echo "<br>
-        echo $i * 5;";  
-    }
-    echo "<br>";
+        echo"Bucle de multiplos de 5 hasta el 100";
+        for ($i = 0; $i <= 100; $i++) {
+            if ($i % 5 == 0) {
+                echo $i . "<br>";
+            }
+        }
+        echo "<br>";
+        echo"Mostrar múltiplos de 5 (0–100) con un bucle while.";
+        while ($i <= 100) {
+            if ($i % 5 == 0) {
+                echo $i . "<br>";
+            }
+            $i++;
+        }
+        echo "<br>";
+        echo "Mostrar múltiplos de 5 (0–100) con un bucle do-while.";
+        
+        
     ?>
 </body>
 </html>
