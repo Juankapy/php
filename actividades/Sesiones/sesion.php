@@ -1,3 +1,4 @@
+<h1>Contador de Visitas</h1>
 <?php
 session_start();
  if (!isset($_SESSION['counter'])) {
@@ -5,8 +6,9 @@ session_start();
  } else {
  $_SESSION['counter']++;
  }
- echo ("Page Views: ".$_SESSION['counter']);
+ echo ("Visitas: ".$_SESSION['counter']);
+ 
 ?>
-<a href=”cerrarsesion.php”>Cerrar Sesión</a>
+<br>
+<a href='cerrarsesion.php'>Cerrar Sesión</a>
 
-?>
